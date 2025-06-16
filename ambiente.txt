@@ -1,0 +1,4 @@
+creacion:
+pyhton -m venv env
+activacion: 
+env/Scrpits/activate

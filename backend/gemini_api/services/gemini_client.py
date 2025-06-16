@@ -35,9 +35,16 @@ class GeminiClient:
         
         
         try:
-            
+            input_user = input("hola soy gemini: ") 
             self.client = genai.Client(api_key=self.api_gemini_key)
-            
+            response = self.client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents = input_user,
+            )
+
+        
+
+            print(response.text)
             print("Successfully connected to Gemini API")
         
         except Exception as ex:
