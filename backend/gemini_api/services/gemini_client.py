@@ -37,6 +37,7 @@ class GeminiClient:
         try:
             
             self.client = genai.Client(api_key=self.api_gemini_key)
+            
             print("Successfully connected to Gemini API")
         
         except Exception as ex:
